@@ -22,13 +22,32 @@
 </head>
 
 <body>
+	<div class="container-fluid p-0 mb-5">
+		<nav class="navbar navbar-expand-lg navbar-light bg-dark p-2">
+			<a href="index.php?page=userform" class="nav-link text-light">User System</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a href="index.php?page=userform" class="nav-link text-light">Sign up</a>
+					</li>
+					<li class="nav-item">
+						<a href="index.php?page=userlist" class="nav-link text-light">User List</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</div>
 	<?php
 		if(isset($_GET['page'])){
 			if($_GET['page'] === 'userform'){
 				include_once 'forms/userForm.php';
 			}
-			else if($_GET['page'] === 'profile'){
-				include_once 'content/profile.php';
+			else if($_GET['page'] === 'userlist'){
+				include_once 'content/userList.php';
 			}
 		}
 		
