@@ -24,7 +24,7 @@
 <body>
 	<div class="container-fluid p-0 mb-5">
 		<nav class="navbar navbar-expand-lg navbar-light bg-dark p-2">
-			<a href="index.php?page=userform" class="nav-link text-light">User System</a>
+			<a href="index.php?page=userlist" class="nav-link text-light">User System</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
 				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
